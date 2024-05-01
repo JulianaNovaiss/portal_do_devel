@@ -1,74 +1,117 @@
-body{
-    background-color:#f4f4f4;
-    padding: 0;
-    margin: 0;
-    transition: 0.3s;
- }
-header{
-   padding:20px;
-   background-color:#333;
-   text-align: center;
-   color:#fff;
+body {
+  background-color: #f4f4f4;
+  padding: 0;
+  margin: 0;
+  transition: 0.3s;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  padding: 20px;
+  background-color: #333;
+  text-align: center;
+  color: #fff;
 }
 
-nav{
-   background-color: #333;
-   padding: 10px 20px 10px 20px;
-   
+nav {
+  background-color: #333;
+  padding: 10px 20px 10px 20px;
 }
 
 nav ul {
-    display: flex;
-    text-align: center;
-    justify-content: end;
-    
+  display: flex;
+  text-align: center;
+  justify-content: end;
 }
 
-nav ul li a{
-    color: white;
-    text-decoration: none;
+nav ul li a {
+  color: white;
+  text-decoration: none;
 }
 
-nav ul li{
-    list-style-type: none;
-    margin-left: 10px;
+nav ul li {
+  list-style-type: none;
+  margin-left: 10px;
 }
 
-.container{
-    margin-right: auto;
-    margin-left: auto;
-    max-width: 1000px;
-   
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1000px;
 }
 
-main{
-    background-color: #d1d1d1;
-    display: flex;
-    flex-wrap:wrap;
+main {
+  background-color: #d1d1d1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+  padding: 20px;
+}
+
+article {
+  width: 40%;
+  padding: 20px;
+  background-color: #b0b0b0;
+}
+
+.bloco {
+  display: flex;
+}
+
+.imagem {
+  margin: 0;
+  margin-left: 20px;
+}
+
+.bloco-perfil {
+  display: flex;
+  flex-direction: column;
+}
+.bloco-configuracoes {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#botao-salvar {
+  width: 150px;
+}
+footer {
+  padding: 1px;
+  background-color: #333;
+  text-align: center;
+  color: #fff;
+}
+
+/* Telas até 900px */
+@media (max-width: 900px) {
+  .bloco {
+    flex-wrap: wrap;
     justify-content: center;
-    gap:20px;
+  }
+  .imagem-perfil {
+    margin: 0;
+    margin-top: 8px;
+  }
+}
+
+/* Telas até 768px */
+@media (max-width: 768px) {
+  body {
+    transform: translateY(-100px);
+  }
+
+  article {
+    width: 100%;
+  }
+
+  .bloco {
+    flex-wrap: nowrap;
+  }
+  .bloco-perfil {
+    flex-direction: row;
     align-items: center;
-    padding: 20px;
-
+    gap: 8px;
+    justify-content: center;
+  }
 }
-
-article{
-    width: 40%;
-    padding: 20px;
-    background-color: #b0b0b0;
-}
-
-.bloco{
-    display: flex;
-    margin-left: 20px;
-   
-}
-
-
-@media (max-width:768px){
-    body{
-       transform:translateY(-100px);
-    }
-}
-
-
